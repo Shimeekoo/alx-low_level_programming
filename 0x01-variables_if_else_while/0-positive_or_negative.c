@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - assigns & random nubmers to int n every time 
- * it executes, and prints it
- * Return: Always 0 (Success)     
+ * main - Entry point
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
