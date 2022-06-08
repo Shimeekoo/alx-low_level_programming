@@ -17,30 +17,32 @@ void jack_bauer(void)
 
 		while (hr1 < 3)
 		{
-			if (hr1 == 2 && hr2 == 4)
-				break;
-			while (sec1 < 6)
+			while (hr2 <= 9)
 			{
-
-				while (sec2 <= 9)
+				if (hr1 == 2 && hr2 == 4)
+					break;
+				while (sec1 < 6)
 				{
-					_putchar(hr1 + '0');
-					_putchar(hr2 + '0');
-					_putchar(':');
-					_putchar(sec1 + '0');
-					_putchar(sec2 + '0');
-					_putchar('\n');
-					sec2++;
+					while (sec2 <= 9)
+					{
+						_putchar(hr1 + '0');
+						_putchar(hr2 + '0');
+						_putchar(':');
+						_putchar(sec1 + '0');
+						_putchar(sec2 + '0');
+						_putchar('\n');
+						sec2++;
+					}
+					sec2 = 0;
+					sec1++;
 				}
-				sec2 = 0;
-				sec1++;
+				sec1 = 0;
+				hr2++;
 			}
-			sec1 = 0;
-			hr2++;
+			hr2 = 0;
+			hr1++;
 		}
-		hr2 = 0;
-		hr1++;
-}
+
 }
 
 
